@@ -1,0 +1,4 @@
+replace vowels
+turn message
+replace ASCII
+Hola mi nombre es Frailejon Ernesto Perez
