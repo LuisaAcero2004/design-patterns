@@ -10,4 +10,4 @@ El programa tiene 3 tipos de codificación:
 El programa tiene 3 patrones de diseño:
 1. Template Method
 2. Factory Method
-3. 
+3. Memento/Snapshot
