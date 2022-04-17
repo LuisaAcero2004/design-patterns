@@ -22,7 +22,6 @@ public class encoderSelection {
             comboBox1.addItem(file[i]);
         }
 
-
         encodeButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -33,8 +32,8 @@ public class encoderSelection {
                 Caretaker caretaker = new Caretaker();
                 caretaker.addMemento(message.createMemento());
                 message.updateMemento(encoder.encode(message.getMessage()));
-                inputMessage.setText("Input message: " + caretaker.getLastMemento().message);
-                outputMessage.setText("Output message: " + message.getMessage());
+                inputMessage.setText("   Input message: " + caretaker.getLastMemento().message);
+                outputMessage.setText("   Output message: " + message.getMessage());
 
                 String outMessage = String.format("Input message: %s\nOutput message: %s", caretaker.getLastMemento().message, message.getMessage());
                 ReaderWriter consoleWriter = new RWConsole(outMessage);
